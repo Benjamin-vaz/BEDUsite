@@ -1,6 +1,15 @@
 header{
         height: 70px;
-        background-color: #ffffff;
+        background-color: #fefbf7;
         display: flex;
         width: 100%;
+        align-items: center;
+        justify-content: space-between;
+}
+.imagen-logo{
+    height: 80px;
+}
+nav a{
+    font-size: 30px;
+    text-decoration:none;
 }
