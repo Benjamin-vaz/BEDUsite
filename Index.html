@@ -1,29 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- comentarios -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contesco</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <title>ContEsco | Docente</title>
+    <link rel="Stylesheet" href="assets/css/main.css" >
 </head>
 <body>
-    <header>
-        <!-- Logo con link a la página principal -->
-        <a>
-            <img class="imagen-logo" src="assets/Img/Logo negro.png" alt="Logo_ContEsco"/>
-        </a>
-        <!-- Menú de navegación -->
-        <nav>
-            <a href="Index.html">INICIO</a> |
-            <a href="/css/">CLIENTES</a> |
-            <a href="/js/">NOSOTROS</a> |
-            <a href="/python/">CONTACTO</a>
-        </nav>
-        <!-- Contenedor de acciones de usuario -->
-        <div>
-            <button>Entrar</button>
+    <nav>
+		<a href="Docente.html" 
+			title="Ir a la Página principal">
+			<img src="assets/img/Logo negro.png" id = "logoo" alt="ContEsco">
+		</a>
+		
+		<div id="persona" >
+            Docente: Benjamin Vazquez Martinez
+            <hr>
         </div>
-      </header>
+        <div id="mainMenu">
+			<input type="checkbox" id="menuToggle"></input>
+
+			<label id="menuToggle" for="menuToggle" class="menuOpen">
+				<div class="open"></div>
+			</label>
+
+			<div class="menuPanel menuEffects">
+				<label id="menuToggle" for="menuToggle"></label>
+				<div class="menuContent">
+					
+					<div class="submenu">
+						<input type="checkbox" id="sub-check-1">
+						<label for="sub-check-1">Cuenta</label>
+						<div class="submenu-content">
+							<ul>
+								<li><a href="Index.html">
+									<img src="assets/img/engrane herramienta.svg" alt="Engrane"/>
+									Configuracion
+									</a>
+								</li>
+							</ul>
+							<ul>
+								<li><a href="#">
+									<img src="assets/img/Flecha desviada.svg" alt="Engrane"/>
+									Cerrar sesion
+									</a>
+								</li>				
+							</ul>
+						</div>
+					</div>
+					<div class="submenu">
+						<input type="checkbox" id="sub-check-2">
+						<label for="sub-check-2">Menu</label>
+						<div class="submenu-content">
+							<ul>
+								<li>
+									<a href="Docente-Grupos.html">
+									<img src="assets/img/usuarios.svg" alt="Usuario icono" />
+ 									 Grupos
+									</a>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<a href="Docente-Horario.html">
+										<img src="assets/img/Graficas y signo de +.svg" alt="grafica" />
+									 Horario
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="submenu">
+						<input type="checkbox" id="sub-check-4">
+						<label for="sub-check-4">
+							Notificaciones
+						</label>
+						<div class="submenu-content">
+                            <ul>
+								<li><a href="#">
+									<img src="assets/img/Error.svg" alt="Error"/>
+									Ver Notificaciones
+									</a></li>
+							</ul>
+							<ul>
+								<li>
+									<a href="#">
+									<img src="assets/img/Campana.svg" alt="Alerta"/>
+									Enviar notificacion a alumnos
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!--end menuContent-->
+			</div><!--end menuPanel menuEffects-->
+		</div><!--end mainMenu-->
+</nav>
+<div style="padding-top: 5px"></div>
+<hr style="border-color:#576291;">
+      
+
 </body>
 </html>
